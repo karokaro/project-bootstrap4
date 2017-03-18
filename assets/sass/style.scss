@@ -1,3 +1,364 @@
+@import "_base";
+@import "_colors";
+@import "_typography";
+
 body {
-	background-color: #efefef;
+	font-weight: 300;
+    font-size: 18px;
+    font-family: $font-primary;
+    color: $cl-white;
+    a {
+        text-decoration: none;
+        color: $cl-white;
+        font-size: 14px;
+        &.active {
+        	color: $cl-primary;
+        }
+    }
+    b {
+    	font-weight: bold;
+    }
+    .wrapper {
+		margin: 0 auto;
+		@media (min-width: 1083px) {
+			width: 1083px;
+		}
+	}
+	.header {
+	    z-index: 100;
+	    position: relative;
+	    @media (min-width: 700px) {
+			margin-bottom: -99px;
+		}
+	}
+	.main_img {
+		max-width: 100%;
+		display: block;
+	}
+	.header-top {
+		background-color: $cl-primary;
+		i {
+			color: $cl-white;
+			&.icon-mail-alt {
+				display: none;
+				@media (min-width: 300px) {
+					display: inline-block;
+				}
+			}
+		}
+		.contact,
+		.basket,
+		.social-icons {
+			font-size: 12px;
+			padding: 5px 20px;
+			@media (min-width: 1083px) {
+				padding-left: 0;
+			}
+		}
+		.contact {
+			line-height: 17px;
+			@media (min-width: 400px) {
+				float: left;
+			}
+		}
+		.social-icons {
+			@media (min-width: 550px) {
+				padding: 0;
+				display: inline;
+			}
+		}
+		.basket {
+			@media (min-width: 600px) {
+				float: right;
+			}
+		}
+	}
+	.header-menu {
+		background-color: #333;
+		@media (min-width: 700px) {
+			background-color: rgba(0,0,0,.4);
+			height: 84px;
+		}
+		.logo {
+			padding: 20px 20px 10px;
+			display: inline-block;
+			@media (min-width: 700px) {
+				padding: 10px;
+			}
+			@media (min-width: 1100px) {
+				padding: 10px 0 0;
+			}
+		}
+		.nav {
+			font-size: 13px;
+			@media (min-width: 700px) {
+		        float: right;
+		        margin-top: 20px;
+		        margin-right: 35px;
+		    }
+		    li {
+				margin: 15px 0 0;
+				padding-bottom: 15px;
+				cursor: pointer;
+				border-bottom: 1px solid $cl-white;
+				&:hover {
+					text-indent: 20px;
+					-webkit-transition: 40px .5s ease-in;
+					-moz-transition: 40px .5s ease-in;
+					-o-transition: 40px .5s ease-in;
+					transition: 40px .5s ease-in;
+					cursor: pointer;
+					@media (min-width: 700px) {
+						text-indent: 0;
+					}
+				}
+				@media (min-width: 700px) {
+					float: left;
+					border-bottom: 0;
+				}
+				@media (min-width: 900px) {
+					margin-left: 27px;
+				}
+				a {
+					padding: 0 20px 0;
+					@media (min-width: 700px) {
+						padding: 0 5px 0;
+					}
+					&:hover {
+						@media (min-width: 700px) {
+							color: $cl-primary;
+						}
+					}
+				}
+			}
+		}
+	}
+	.section-lead {
+	    font-family: $font-primary;
+	    font-weight: 300;
+	    background: #3f3f3f;
+	    text-align: center;
+	    padding: 50px 15px;
+	    color: $cl-white;
+	    clear: both;
+	    overflow: hidden;
+	    @media (min-width: 1100px){
+	        padding: 80px 0;
+	    }
+	    .section-lead-content {
+	    	font-weight: 300;
+	        text-align: center;
+	        line-height: 36px;
+	        font-size: 30px;
+	        @media (min-width: 700px) {
+	            float: left;
+	            width: 68%;
+	        }
+	        @media (min-width: 1024px) {
+	            width: 73%;
+	        }
+	    }
+	    .section-lead-info {
+	        text-align: center;
+	        margin-top: 20px;
+	        @media (min-width: 700px) {
+	            float: right;
+	            margin-top: 0;
+	            width: 30%;
+	        }
+	        @media (min-width: 1024px) {
+	            width: 20%;
+	        }
+	        .section-lead-prct {
+	            color: #bb9c40;
+	            font-size: 70px;
+	            line-height: 70px;
+	            font-weight: 500;
+	            padding-bottom: 15px;
+	        }
+	        .section-lead-sub {
+	            text-transform: uppercase;
+	            font-size: 16px;
+	        }
+	    }
+	}
+	.section-data {
+	    font-family: "Open Sans", "Arial";
+	    font-weight: 300;
+	    text-align: left;
+	    background: #fff;
+	    padding: 50px 15px;
+	    color: #333;
+	    clear: both;
+	    overflow: hidden;
+	    @media (min-width: 1100px){
+	        padding: 100px 0;
+	    }
+	    .section-data-content {
+	        text-align: left;
+	        font-weight: 300;
+	        @media (min-width: 768px){
+	            float: left;
+	            width: 68%;
+	        }
+	        @media (min-width: 1024px){
+	            width: 73%;
+	        }
+	        h2 {
+	            padding-bottom: 30px;
+	            font-size: 30px;
+	            font-weight: 300;
+	        }
+	    }
+	    .section-data-info {
+	        text-align: left;
+	        margin-top: 20px;
+	        @media (min-width: 768px){
+	            float: right;
+	            margin-top: 0;
+	            width: 30%;
+	        }
+	        @media (min-width: 1024px){
+	            width: 20%;
+	        }
+	        ul {
+	            list-style: none;
+	            @media (min-width: 768px){
+	                margin-top: 75px;
+	                margin-left: 35px;
+	            }
+	            li {
+	                padding-left: 15px;
+	                padding-bottom: 4px;
+	                font-size: 12px;
+	                font-weight: 500;
+	                position: relative;
+	                &:after {
+	                    position: absolute;
+	                    bottom: 9px;
+	                    left: 0;
+	                    background: #bb9c40;
+	                    content: "";
+	                    display: block;
+	                    width: 6px;
+	                    height: 6px;
+	                    border-radius: 50%;
+	                }
+	            }
+	        }
+	    }
+	}
+	.section-contact {
+		color: $cl-white;
+	    font-family: $font-primary;
+	    font-weight: 300;
+	    text-align: center;
+	    background: #bb9c40;
+	    padding: 50px 0;
+	    @media (min-width: 700px) {
+	        padding: 100px 0;
+	    }
+	    .section-contact-title {
+	        font-weight: 300;
+	        font-size: 30px;
+	        line-height: 35px;
+	        margin-bottom: 30px;
+	        padding: 0 15px;
+	    }
+	    .section-button {
+	        display: block;
+	        padding: 8px 20px;
+	        background: transparent;
+	        border-radius: 3px;
+	        border: 2px solid $cl-white;
+	        text-transform: uppercase;
+	        letter-spacing: 1.5px;
+	        font-weight: 400;
+	        font-size: 16px;
+	        text-align: center;
+	        max-width: 100px;
+	        text-decoration: none;
+	        color: $cl-white;
+	        margin: 0 auto;
+	        &:hover {
+	            background: $cl-white;
+	            color: #bb9c40;
+	        }
+	    }
+	}
+	.section-footer {
+		padding: 40px 20px;
+	    background: #333333;
+	    clear: both;
+	    overflow: hidden;
+	    color: $cl-white;
+	    font-family: $font-primary;
+	    @media (min-width: 1085px){
+	        padding: 70px 0 40px;
+	    }
+	    .section-footer-item {
+	        margin-bottom: 20px;
+	        &:last-child {
+	            @media (min-width: 1024px){
+	                padding-right: 0;
+	                float: right;
+	            }
+	        }
+	        &.is-poits {
+	            li {
+	                padding-left: 10px;
+	                position: relative;
+	                &:after {
+	                    position: absolute;
+	                    bottom: 12px;
+	                    left: 0;
+	                    background: #72a4a9;
+	                    content: "";
+	                    display: block;
+	                    width: 3px;
+	                    height: 3px;
+	                    border-radius: 50%;
+	                }
+	            }    
+	        }
+	        @media (min-width: 700px){
+	            width: 48%;
+	            padding-right: 2%;
+	            float: left;
+	        }
+	        @media (min-width: 1024px){
+	            width: 22%;
+	        }
+	        
+	        .section-footer-contact {
+	        	font-size: 14px;
+	        	line-height: 21px;
+	        }
+	        ul {
+	            list-style: none;
+	        }
+	        li {
+	            padding: 7px 0;
+	            a {
+	                color: $cl-white;
+	                font-weight: 300;
+	                text-decoration: none;
+	                &:hover {
+	                    color: #bb9c40;
+	                }
+	            }
+	        }
+	        .section-footer-mailto {
+	            color: #bb9c40;
+	            display: block;
+	            margin-top: 20px;
+	            text-decoration: none;
+	        }
+	        p {
+	            color: #bb9c40;
+	            margin-bottom: 10px;
+	            font-weight: 300;
+	        }
+	    }
+	}  
 }
