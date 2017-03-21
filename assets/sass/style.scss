@@ -10,7 +10,7 @@ body {
     a {
         text-decoration: none;
         color: $cl-white;
-        font-size: 14px;
+        cursor: pointer;
         &.active {
         	color: $cl-primary;
         }
@@ -45,6 +45,15 @@ body {
 					display: inline-block;
 				}
 			}
+			&:hover {
+				color: $cl-black;
+			}
+		}
+		.icon-phone:hover {
+			color: $cl-white;
+		}
+		a:hover {
+			color: $cl-black;
 		}
 		.contact,
 		.basket,
@@ -60,16 +69,25 @@ body {
 			@media (min-width: 400px) {
 				float: left;
 			}
+			a:hover {
+				color: $cl-black;
+				i {
+					color: $cl-black;
+				}
+			}
 		}
 		.social-icons {
 			@media (min-width: 550px) {
-				padding: 0;
-				display: inline;
+				padding: 4px 20px 0 0;
+				float: left;
 			}
 		}
 		.basket {
 			@media (min-width: 600px) {
 				float: right;
+			}
+			&:hover {
+				color: $cl-black;
 			}
 		}
 	}
@@ -133,6 +151,26 @@ body {
 			}
 		}
 	}
+	.section-button {
+        display: block;
+        padding: 8px 20px;
+        background: transparent;
+        border-radius: 3px;
+        border: 2px solid $cl-white;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        font-weight: 400;
+        font-size: 16px;
+        text-align: center;
+        max-width: 100px;
+        text-decoration: none;
+        color: $cl-white;
+        margin: 0 auto;
+        &:hover {
+            background: $cl-white;
+            color: #bb9c40;
+        }
+    }
 	.section-lead {
 	    font-family: $font-primary;
 	    font-weight: 300;
@@ -248,6 +286,76 @@ body {
 	        }
 	    }
 	}
+	.section-gallery {
+		.section-gallery-box {
+			.section-gallery-img {
+				float: left;
+				&:first-child {
+					width: 70%;
+				}
+				&:last-child {
+					width: 30%;
+				}
+			}
+            &:last-child {
+            	.section-gallery-img:first-child {
+					width: 30%;
+				}
+				.section-gallery-img:last-child {
+					width: 70%;
+				}
+            }
+            @media (min-width: 700px){
+                float: left;
+                width: 50%;
+            }
+		}
+		img {
+			display: block;
+			float: left;
+			max-width: 100%;
+		}
+	}
+	.section-products {
+		background: url('../../images/img-products.jpg') top center no-repeat;
+		max-width: 100%;
+		height: 255px;
+		padding: 100px 15px;
+		@media (min-width: 700px) {
+	        height: 505px;
+	        padding: 285px 0 0;
+	    }
+	    .wrapper {
+	    	padding: 0 15px;
+	    }
+	    .section-products-title {
+	    	margin: 0 auto;
+	    	font-size: 35px;
+	    	@media (min-width: 700px) {
+		        font-size: 45px;
+		    }
+	    }
+	    .section-products-content {
+			font-size: 14px;
+			padding: 35px 0;
+			@media (min-width: 700px) {
+		        padding: 50px 0;
+		    }
+		    @media (min-width: 1083px) {
+				width: 50%;
+		    }
+	    }
+	    .section-button {
+	    	display: inline;
+	    }
+	}
+	.section-logo {
+		img {
+			display: block;
+			margin: 0 auto;
+			padding: 15px 0;
+		}
+	}
 	.section-contact {
 		color: $cl-white;
 	    font-family: $font-primary;
@@ -264,26 +372,6 @@ body {
 	        line-height: 35px;
 	        margin-bottom: 30px;
 	        padding: 0 15px;
-	    }
-	    .section-button {
-	        display: block;
-	        padding: 8px 20px;
-	        background: transparent;
-	        border-radius: 3px;
-	        border: 2px solid $cl-white;
-	        text-transform: uppercase;
-	        letter-spacing: 1.5px;
-	        font-weight: 400;
-	        font-size: 16px;
-	        text-align: center;
-	        max-width: 100px;
-	        text-decoration: none;
-	        color: $cl-white;
-	        margin: 0 auto;
-	        &:hover {
-	            background: $cl-white;
-	            color: #bb9c40;
-	        }
 	    }
 	}
 	.section-footer {
@@ -329,7 +417,6 @@ body {
 	        @media (min-width: 1024px){
 	            width: 22%;
 	        }
-	        
 	        .section-footer-contact {
 	        	font-size: 14px;
 	        	line-height: 21px;
@@ -360,5 +447,18 @@ body {
 	            font-weight: 300;
 	        }
 	    }
+	}
+	.footer-bottom {
+		background-color: #1e1e1e;
+		height: 50px;
+		.social-icons {
+			padding: 10px;
+			@media (min-width: 1024px){
+	            float: right;
+	        }
+			a:hover {
+				color: $cl-primary;
+			}
+		}
 	}  
 }
