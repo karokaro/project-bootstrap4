@@ -236,6 +236,92 @@ body {
 					text-decoration: underline;
 				}
 			}
+
+			img {
+				transition: 1s;
+
+				&:hover {
+					transform: scale(0.98);
+					transition: 1s;
+				}
+			}
+		}
+	}
+
+	/* SECTION NUMBERS */
+	.section-numbers {
+		background-color: $cl-white;
+		padding-top: 4rem;
+		.header-numbers,
+		.under-heading {
+			text-align: center;
+		}
+
+		.num {
+			text-align: center;
+			padding: 4rem 0;
+			margin-left: 80px;
+
+			p {
+				padding-top: 10px;
+			}
+		}
+		.num-content {
+			display: table-cell;
+			vertical-align: middle;
+			font-size: 18px;
+			color: $cl-white;
+			line-height: 20px;
+			height: 140px;
+			width: 140px;
+			background-color: $cl-orange;
+			border-radius: 50%;
+			transition: .3s;
+
+			&:hover {
+				color: $cl-grey2;
+				transition: .3s;
+			}
+		}
+	}
+
+	/* SECTION TESTIMONIALS */
+	.section-testimonials {
+		padding-top: 4rem;
+		.header-testimonials,
+		.under-heading {
+			text-align: center;
+		}
+
+		.testimonials {
+			margin-top: 4rem;
+			padding-bottom: 3rem;
+		}
+
+		.user-img {
+			width: 115px;
+    		border-radius: 50%;
+    		transition: .5s;
+
+    		&:hover {
+    			transition: .5s;
+    			transform: scale(.95);
+    		}
+		}
+
+		blockquote {
+			font-family: 'Nunito-Regular';
+			font-size: 15px;
+		}
+
+		.fa-quote-right {
+			margin-right: 10px;
+		}
+
+		.testimonials-hr {
+			border-top: 1px solid $cl-orange;
+			width: 225px;
+			background-color: $cl-orange;
 		}
 	}
 
