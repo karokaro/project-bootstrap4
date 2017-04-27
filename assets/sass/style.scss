@@ -221,9 +221,22 @@ body {
 	}
 
 	/* SECTION CARDS */
-	.header-cards,
-	.under-heading {
-		text-align: center;
+	#section-cards {
+		padding: 4rem 0;
+		.header-cards,
+		.under-heading {
+			text-align: center;
+		}
+		.card {
+			margin-top: 2rem;
+
+			a {
+				color: $cl-orange;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
 	}
 
 }	
