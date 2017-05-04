@@ -30,16 +30,38 @@ body {
 
 	.wall-sticker {
 		background: rgba(0, 0, 0, .4);
-		padding: 11rem 15rem 13rem 2rem;
-		font-size: 3rem;
+		padding: 5%;
+		font-size: 1rem;
+
+		@media (min-width: 575px) {
+			font-size: 3rem;
+		}
+
+		@media (min-width: 768px) {
+			padding: 11rem 15rem 13rem 2rem;
+		}
+
+		button {
+			margin-top: 5%;
+		}
 	}
 
 	.moto {
-		margin-top: 250px;
-		margin-left: 100px;
+		margin: 5%;
 		text-align: center;
-		line-height: 2.5rem;
-    	font-size: 1.6rem;
+		line-height: 2rem;
+    	font-size: 1rem;
+
+    	@media (min-width: 575px) {
+			font-size: 1.6rem;
+			line-height: 2.2rem;
+		}
+
+    	@media (min-width: 768px) {
+    		margin: 0;
+			margin-top: 200px;
+			margin-left: 160px;
+		}
 	}
 
 	/* BUTTONS */
@@ -60,10 +82,14 @@ body {
 	}
 
 	.fa-arrow-down {
-		margin-left: 55%;
-		margin-top: 10px;
+		margin: 5% 50%;
 		font-size: 2.2rem;
 		color: $cl-white;
+
+		@media (min-width: 768px) {
+			margin-left: 60%;
+		}
+
 		&:hover {
 			color: $cl-orange;
 			transition: .5s;
@@ -107,13 +133,17 @@ body {
 	}
 	.navbar.fixed-top {
 		position: static;
-		@media (min-width: 770px) {
+		@media (min-width: 768px) {
 			position: fixed;
 		}
 	}
 	/* SECTION FEATURES */
 	.section-features {
-		padding: 4rem 0;
+		padding: 2rem 0;
+
+		@media (min-width: 768px) {
+			padding: 4rem 0;
+		}
 		.header-features,
 		.under-heading {
 			text-align: center;
@@ -144,7 +174,11 @@ body {
 	/* SECTION TIMELINE */
 	.section-timeline {
 		background-color: $cl-white;
-		padding-top: 4rem;
+		padding-top: 2rem;
+
+		@media (min-width: 768px) {
+			padding-top: 4rem;
+		}
 
 		.timeline {
 			list-style: none;
@@ -295,7 +329,12 @@ body {
 
 	/* SECTION CARDS */
 	#section-cards {
-		padding: 4rem 0;
+		padding: 2rem 0;
+		
+		@media (min-width: 768px) {
+			padding: 4rem 0;
+		}
+
 		.header-cards,
 		.under-heading {
 			text-align: center;
@@ -345,7 +384,11 @@ body {
 	/* SECTION NUMBERS */
 	.section-numbers {
 		background-color: $cl-white;
-		padding-top: 4rem;
+		padding-top: 2rem;
+
+		@media (min-width: 768px) {
+			padding-top: 4rem;
+		}
 		.header-numbers,
 		.under-heading {
 			text-align: center;
@@ -403,7 +446,11 @@ body {
 
 	/* SECTION TESTIMONIALS */
 	.section-testimonials {
-		padding-top: 4rem;
+		padding-top: 2rem;
+
+		@media (min-width: 768px) {
+			padding-top: 4rem;
+		}
 		.header-testimonials,
 		.under-heading {
 			text-align: center;
@@ -445,7 +492,11 @@ body {
 
 		blockquote {
 			font-family: 'Nunito-Regular';
-			font-size: 15px;
+			font-size: 13px;
+
+			@media (min-width: 768px) {
+				font-size: 15px;
+			}
 		}
 
 		.fa-quote-right {
@@ -461,8 +512,12 @@ body {
 
 	/* SECTION CONTACT */
 	.section-contact {
-		padding: 4rem 0 3rem;
+		padding: 2rem 0 1rem;
 		background-color: $cl-white;
+
+		@media (min-width: 768px) {
+			padding: 4rem 0 3rem;
+		}
 		.header-contact {
 			text-align: center;
 		}
@@ -540,10 +595,10 @@ body {
 				display: inline-block;
 				margin: 0 2px;
 
-				@media (min-width: 570px) {
+				@media (min-width: 575px) {
 					margin-top: 30px;
 				}
-				@media (min-width: 770px) {
+				@media (min-width: 768px) {
 					margin: 30px 5px;
 				}
 				@media (min-width: 990px) {
@@ -600,7 +655,6 @@ body {
 
 			@media (min-width: 575px) {
 				margin-top: 40px;
-				font-size: 16px;
 			}
 
 			@media (min-width: 768px) {
