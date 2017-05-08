@@ -82,12 +82,13 @@ body {
 	}
 
 	.fa-arrow-down {
-		margin: 5% 50%;
 		font-size: 2.2rem;
 		color: $cl-white;
+		display: none;
 
 		@media (min-width: 768px) {
-			margin-left: 60%;
+			margin: 5% 60%;
+			display: block;
 		}
 
 		&:hover {
@@ -103,14 +104,14 @@ body {
 
 	/* NAVBAR */
 	.navbar {
-		font-family: 'Nunito-Regular';
+		font-family: $font-secondary;
 		.navbar-brand {
 			text-transform: uppercase;
 		}
 		.navbar-collapse {
 			.nav-item {
 				font-size: 14px;
-				@media (min-width: 1200px) {
+				@media (min-width: 1000px) {
 					font-size: 16px;
 				}
 			}
@@ -121,7 +122,7 @@ body {
 			color: $cl-greyC;
 			&:hover {
 				color: $cl-orange;
-				@media (min-width: 1200px) {
+				@media (min-width: 1000px) {
 					border-bottom: 1px solid $cl-orange;
 					transition: .5s;
 				}
@@ -134,7 +135,7 @@ body {
 			position: fixed;
 		}
 	}
-	
+
 	/* SECTION FEATURES */
 	.section-features {
 		padding: 2rem 0;
@@ -159,7 +160,7 @@ body {
 			}
 			p {
 				padding-top: .5rem;
-				font-family: 'Nunito-Regular';
+				font-family: $font-secondary;
 			}
 		}
 		.hr-orange {
@@ -266,7 +267,7 @@ body {
 				}
 
 				p {
-					font-family: 'Nunito-Regular';
+					font-family: $font-secondary;
 					font-weight: 700;
 					font-size: 13px;
 
@@ -489,7 +490,7 @@ body {
 		}
 
 		blockquote {
-			font-family: 'Nunito-Regular';
+			font-family: $font-secondary;
 			font-size: 13px;
 
 			@media (min-width: 768px) {
