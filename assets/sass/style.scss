@@ -102,15 +102,12 @@ body {
 	}
 
 	/* NAVBAR */
-	#main-nav {
+	.navbar {
 		font-family: 'Nunito-Regular';
 		.navbar-brand {
-			margin: 0 1.5rem 0 1rem;
 			text-transform: uppercase;
 		}
-		#navbarNav {
-			width: 66%;
-
+		.navbar-collapse {
 			.nav-item {
 				font-size: 14px;
 				@media (min-width: 1200px) {

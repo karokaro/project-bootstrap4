@@ -3,6 +3,8 @@
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
 		<title>Responsive website</title>
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,600,700&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-css/bootstrap.min.css">
@@ -32,9 +34,46 @@
             </div>
         </div>
     </section>
-    <nav class="navbar navbar-dark bg-inverse navbar-toggleable-sm navbar-full bg-faded flex-nowrap" id="main-nav">
-        <a class="navbar-brand" href="#">Parents</a>
-        <div id="navbarNav" class="navbar-collapse">
+    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#cover">Parents</a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#cover">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#features">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#timeline">Timeline</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section-cards">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#numbers">Number</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#testimonials">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact us</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="text" placeholder="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <!-- <nav class="navbar navbar-dark bg-inverse">
+        <button class="navbar-toggler hidden-sm-up" data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-expaded="false" aria-label="Toggle navigation"></button>
+        <div class="collapse navbar-toggleable-xs" id="#exCollapsingNavbar2">
+            <a href="#cover" class="navbar-brand">Parents</a>
             <ul class="nav navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" href="#cover">Home</a>
@@ -58,12 +97,9 @@
                     <a class="nav-link" href="#contact">Contact us</a>
                 </li>
             </ul>
+
         </div>
-        <form class="form-inline pull-xs-right">
-            <input class="form-control" type="text" placeholder="Search">
-            <button class="btn btn-md btn-success-outline" type="submit">Search</button>
-        </form>
-    </nav>
+    </nav> -->
     <section id="features">
         <div class="section-features">
             <div class="container">
