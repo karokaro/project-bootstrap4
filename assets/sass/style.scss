@@ -304,7 +304,8 @@ body {
 	/* SECTION PARALLAX */
 	#section-parallax {
 		text-align: center;
-		background: url(../../images/main-img.jpg) center repeat fixed;
+		background: url(../../images/main-img.jpg) center repeat;
+		background-attachment: fixed;
 		padding: 50px 0;
 		background-size: cover;
 		color: $cl-white;
